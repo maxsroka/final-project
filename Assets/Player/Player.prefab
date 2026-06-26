@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 602124438938521392}
   - component: {fileID: 8665440593082431913}
+  - component: {fileID: 1879953771301291041}
   - component: {fileID: 1013204630149843397}
   - component: {fileID: 1795109312029853672}
   m_Layer: 0
@@ -48,7 +49,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   rigidbody: {fileID: 1795109312029853672}
-  speed: 5
+  camera: {fileID: 0}
+  speed: 500
+--- !u!114 &1879953771301291041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6662100171165833948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6198d6b4f42185d4b9b6f587c08c2f25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraController
+  sensitivity: 0.1
+  pivot: {fileID: 0}
 --- !u!114 &1013204630149843397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,8 +103,8 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6662100171165833948}
   serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
+  m_Mass: 100
+  m_LinearDamping: 1
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
