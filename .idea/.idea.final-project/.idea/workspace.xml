@@ -7,8 +7,6 @@
     <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Levels/0/Level 0 (Prototyping).unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/0/Level 0 (Prototyping).unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/SoapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/SoapController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +35,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2d13e1d0272a48939db0df2b39041de120ce00/e2/4eb4a7a8/Time.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a177e11105454dbeaf690ce2bc62c09b2b200/24/8978ca2c/Rigidbody.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Levels/0/Level 0 (Prototyping).unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Levels/0/Plate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Player.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/SoapController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -119,6 +118,7 @@
       <workItem from="1782514254354" duration="2957000" />
       <workItem from="1782521769104" duration="6881000" />
       <workItem from="1782562118921" duration="2567000" />
+      <workItem from="1782572746128" duration="2536000" />
     </task>
     <task id="LOCAL-00001" summary="added gravity">
       <option name="closed" value="true" />
