@@ -294,14 +294,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140074981}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7057117829145480596}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,6 +625,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1060404103 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1906015796387160, guid: 9b8802d83e59c8c448a7665322aa7d17, type: 3}
+  m_PrefabInstance: {fileID: 1240601350}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1240601350
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -693,16 +698,41 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 2425c03ff18262a4eaa45371f0fe6dcf, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 64971371895215670, guid: 9b8802d83e59c8c448a7665322aa7d17, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1906015796387160, guid: 9b8802d83e59c8c448a7665322aa7d17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1240601355}
   m_SourcePrefab: {fileID: 100100000, guid: 9b8802d83e59c8c448a7665322aa7d17, type: 3}
 --- !u!4 &1240601351 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4566176650753290, guid: 9b8802d83e59c8c448a7665322aa7d17, type: 3}
   m_PrefabInstance: {fileID: 1240601350}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1240601355
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060404103}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.099999994, z: 1}
+  m_Center: {x: 0.5, y: -0.049999997, z: 0.5}
 --- !u!1001 &1289100080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1451,7 +1481,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 602124438938521392, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 4.39
       objectReference: {fileID: 0}
     - target: {fileID: 602124438938521392, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1503,7 +1533,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665440593082431913, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
       propertyPath: speed
-      value: 700
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 8665440593082431913, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
       propertyPath: camera
@@ -1511,7 +1541,23 @@ PrefabInstance:
       objectReference: {fileID: 7057117829145480596}
     - target: {fileID: 8665440593082431913, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
       propertyPath: gravity
-      value: 300
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665440593082431913, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
+      propertyPath: maxSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665440593082431913, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
+      propertyPath: acceleration
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665440593082431913, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
+      propertyPath: deceleration
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665440593082431913, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
+      propertyPath: groundCheckLength
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8665440593082431913, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
       propertyPath: cinemachineOrbitalFollow

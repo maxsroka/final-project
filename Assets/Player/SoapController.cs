@@ -5,16 +5,19 @@ public class SoapController : MonoBehaviour
 {
     [SerializeField] Rigidbody rigidbody;
     [SerializeField] Transform camera;
-    [SerializeField] float speed = 5f;
-    [SerializeField] float gravity = 1f;
+    [SerializeField] float acceleration;
+    [SerializeField] float deceleration;
+    [SerializeField] float gravity;
+    [SerializeField] float maxSpeed;
         
     Vector3 input;
+    Vector3 velocity;
     
     void OnMove(InputValue value)
     {
         input = value.Get<Vector2>();
     }
-
+    
     void Move()
     {
         var forward = camera.forward;
@@ -24,11 +27,12 @@ public class SoapController : MonoBehaviour
         right.y = 0;
 
         var direction = input.x * right + input.y * forward;
-        var velocity = direction.normalized * (speed * Time.fixedDeltaTime);
+        velocity += direction.normalized * (acceleration * Time.fixedDeltaTime);
+        velocity.y = -gravity;
 
-        velocity.y -= gravity * Time.fixedDeltaTime;
-
+        velocity = Vector3.ClampMagnitude(velocity, maxSpeed);
         rigidbody.linearVelocity = velocity;
+        velocity = Vector3.MoveTowards(velocity, Vector3.zero, deceleration * Time.fixedDeltaTime);
     }
 
     void FixedUpdate()
