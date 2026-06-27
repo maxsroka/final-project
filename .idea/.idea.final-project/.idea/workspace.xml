@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Levels/0/Level 0 (Prototyping).unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/0/Level 0 (Prototyping).unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/SoapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/SoapController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +19,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "maxsroka"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/maxsroka/final-project.git",
+    "accountId": "2b74adce-180c-44a2-a736-3780c94f176f"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2d13e1d0272a48939db0df2b39041de120ce00/b1/8db6c1ac/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2d13e1d0272a48939db0df2b39041de120ce00/cc/6976d19e/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2d13e1d0272a48939db0df2b39041de120ce00/e2/4eb4a7a8/Time.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a177e11105454dbeaf690ce2bc62c09b2b200/24/8978ca2c/Rigidbody.cs" root0="SKIP_HIGHLIGHTING" />
@@ -99,7 +117,7 @@
       <workItem from="1782452500805" duration="3203000" />
       <workItem from="1782514193627" duration="16000" />
       <workItem from="1782514254354" duration="2957000" />
-      <workItem from="1782521769104" duration="2861000" />
+      <workItem from="1782521769104" duration="5495000" />
     </task>
     <task id="LOCAL-00001" summary="added gravity">
       <option name="closed" value="true" />
@@ -109,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782523429753</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added a simple soap model">
+      <option name="closed" value="true" />
+      <created>1782527057770</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1782527057770</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,7 +152,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="added gravity" />
-    <option name="LAST_COMMIT_MESSAGE" value="added gravity" />
+    <MESSAGE value="added a simple soap model" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a simple soap model" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
