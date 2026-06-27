@@ -21,12 +21,12 @@ public class CameraController : MonoBehaviour
         rotation = pivot.rotation.eulerAngles;
     }
 
-    void Update()
+    void LateUpdate()
     {
         rotation += new Vector3(-input.y, input.x, 0f) * sensitivity;
         rotation.x = Mathf.Clamp(rotation.x, 0, 180f);
         pivot.rotation = Quaternion.Euler(rotation);
-
+        
         pivot.position = transform.position;
     }
 }

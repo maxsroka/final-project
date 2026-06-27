@@ -8,6 +8,7 @@ public class SoapController : MonoBehaviour
     [SerializeField] Rigidbody rigidbody;
     [SerializeField] Transform camera;
     [SerializeField] float speed = 5f;
+    [SerializeField] float gravity = 1f;
         
     Vector3 input;
     
@@ -25,12 +26,14 @@ public class SoapController : MonoBehaviour
         right.y = 0;
 
         var direction = input.x * right + input.y * forward;
-        var force = direction * speed;
-        
-        rigidbody.AddForce(force);
+        var velocity = direction.normalized * (speed * Time.fixedDeltaTime);
+
+        velocity.y -= gravity * Time.fixedDeltaTime;
+
+        rigidbody.linearVelocity = velocity;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         Move();
     }

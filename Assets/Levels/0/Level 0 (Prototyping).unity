@@ -456,6 +456,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23640767895571922, guid: 9b8802d83e59c8c448a7665322aa7d17, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6615f1708a4932646adcdc55932feefa, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -673,9 +677,17 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8665440593082431913, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
+      propertyPath: speed
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665440593082431913, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
       propertyPath: camera
       value: 
       objectReference: {fileID: 7057117829145480596}
+    - target: {fileID: 8665440593082431913, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
+      propertyPath: gravity
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8665440593082431913, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
       propertyPath: cinemachineOrbitalFollow
       value: 
