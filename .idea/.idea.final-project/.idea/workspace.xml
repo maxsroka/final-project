@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/0/Level 0 (Prototyping).unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/0/Level 0 (Prototyping).unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/SoapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/SoapController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +118,7 @@
       <workItem from="1782514254354" duration="2957000" />
       <workItem from="1782521769104" duration="6881000" />
       <workItem from="1782562118921" duration="2567000" />
-      <workItem from="1782572746128" duration="2536000" />
+      <workItem from="1782572746128" duration="4047000" />
     </task>
     <task id="LOCAL-00001" summary="added gravity">
       <option name="closed" value="true" />
@@ -152,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782531113383</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added a plate for prototyping">
+      <option name="closed" value="true" />
+      <created>1782575841625</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1782575841625</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +180,8 @@
     <MESSAGE value="added a simple soap model" />
     <MESSAGE value="added a physics material" />
     <MESSAGE value="added some objects to the lvl 0" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some objects to the lvl 0" />
+    <MESSAGE value="added a plate for prototyping" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a plate for prototyping" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

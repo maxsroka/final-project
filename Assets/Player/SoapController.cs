@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,6 +10,7 @@ public class SoapController : MonoBehaviour
     [SerializeField] float deceleration;
     [SerializeField] float gravity;
     [SerializeField] float maxSpeed;
+    [SerializeField] float meltSpeed;
         
     Vector3 input;
     Vector3 velocity;
@@ -33,6 +35,20 @@ public class SoapController : MonoBehaviour
         velocity = Vector3.ClampMagnitude(velocity, maxSpeed);
         rigidbody.linearVelocity = velocity;
         velocity = Vector3.MoveTowards(velocity, Vector3.zero, deceleration * Time.fixedDeltaTime);
+    }
+
+    void Melt()
+    {
+        if (rigidbody.linearVelocity.sqrMagnitude < 0.1f) return;
+        
+        var scale = transform.localScale;
+        scale = Vector3.MoveTowards(scale, Vector3.one * 0.1f, meltSpeed * Time.deltaTime);
+        transform.localScale = scale;
+    }
+
+    void Update()
+    {
+        Melt();
     }
 
     void FixedUpdate()

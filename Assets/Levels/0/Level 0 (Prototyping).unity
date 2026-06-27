@@ -1597,6 +1597,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8665440593082431913, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
+      propertyPath: meltSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665440593082431913, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
       propertyPath: acceleration
       value: 100
       objectReference: {fileID: 0}
