@@ -4,55 +4,73 @@ using UnityEngine.InputSystem;
 
 public class SoapController : MonoBehaviour
 {
+    [SerializeField] InputActionReference move;
+    [SerializeField] InputActionReference jump;
     [SerializeField] Rigidbody rigidbody;
     [SerializeField] Transform camera;
-    [SerializeField] float acceleration;
-    [SerializeField] float deceleration;
-    [SerializeField] float gravity;
-    [SerializeField] float maxSpeed;
-    [SerializeField] float meltSpeed;
-        
-    Vector3 input;
-    Vector3 velocity;
+    [SerializeField] float speed;
+    [SerializeField] float airborneGravity;
+    [SerializeField] float groundedGravity;
+    [SerializeField] float rotationSpeed;
+
+    bool isGrounded;
+    bool doJump;
     
-    void OnMove(InputValue value)
+    void Start()
     {
-        input = value.Get<Vector2>();
+        InputSystem.actions.Enable();
     }
-    
+
+    void FixedUpdate()
+    {
+        Move();
+    }
+
     void Move()
     {
+        var input = move.action.ReadValue<Vector2>();
+        
         var forward = camera.forward;
         forward.y = 0;
 
         var right = camera.right;
         right.y = 0;
 
-        var direction = input.x * right + input.y * forward;
-        velocity += direction.normalized * (acceleration * Time.fixedDeltaTime);
-        velocity.y = -gravity;
+        var direction = (input.x * right + input.y * forward).normalized;
+        var force = direction * speed;
+        if (!doJump || !isGrounded)
+        {
+            force.y = isGrounded ? -groundedGravity : -airborneGravity;
+        }
 
-        velocity = Vector3.ClampMagnitude(velocity, maxSpeed);
-        rigidbody.linearVelocity = velocity;
-        velocity = Vector3.MoveTowards(velocity, Vector3.zero, deceleration * Time.fixedDeltaTime);
-    }
-
-    void Melt()
-    {
-        if (rigidbody.linearVelocity.sqrMagnitude < 0.1f) return;
+        rigidbody.AddForce(force, ForceMode.Acceleration);
         
-        var scale = transform.localScale;
-        scale = Vector3.MoveTowards(scale, Vector3.one * 0.1f, meltSpeed * Time.deltaTime);
-        transform.localScale = scale;
+        isGrounded = false;
+
+        if (doJump)
+        {
+            var dir = Quaternion.AngleAxis(90f, Vector3.up) * forward.normalized;
+            rigidbody.AddTorque(dir * rotationSpeed, ForceMode.VelocityChange);
+            doJump = false;
+        }
     }
 
     void Update()
     {
-        Melt();
+        if (jump.action.WasPerformedThisFrame() && isGrounded)
+        {
+            doJump = true;
+        }
     }
 
-    void FixedUpdate()
+    void OnCollisionStay(Collision other)
     {
-        Move();
+        isGrounded = true;
+    }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(rigidbody.position, rigidbody.position + rigidbody.linearVelocity);
     }
 }
