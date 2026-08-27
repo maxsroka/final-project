@@ -11,10 +11,10 @@ public class SoapController : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] float airborneGravity;
     [SerializeField] float groundedGravity;
-    [SerializeField] float rotationSpeed;
+    [SerializeField] float flipAngularForce;
+    [SerializeField] float flipLinearForce;
 
     bool isGrounded;
-    bool doJump;
     
     void Start()
     {
@@ -38,28 +38,27 @@ public class SoapController : MonoBehaviour
 
         var direction = (input.x * right + input.y * forward).normalized;
         var force = direction * speed;
-        if (!doJump || !isGrounded)
-        {
-            force.y = isGrounded ? -groundedGravity : -airborneGravity;
-        }
+        force.y = isGrounded ? -groundedGravity : -airborneGravity;
 
         rigidbody.AddForce(force, ForceMode.Acceleration);
         
         isGrounded = false;
+    }
 
-        if (doJump)
-        {
-            var dir = Quaternion.AngleAxis(90f, Vector3.up) * forward.normalized;
-            rigidbody.AddTorque(dir * rotationSpeed, ForceMode.VelocityChange);
-            doJump = false;
-        }
+    void Flip()
+    {
+        var forward = camera.forward;
+        forward.y = 0;
+        var rotationDirection = Quaternion.AngleAxis(90f, Vector3.up) * forward.normalized;
+        rigidbody.AddTorque(rotationDirection * flipAngularForce, ForceMode.VelocityChange);
+        rigidbody.AddForce(Vector3.up * flipLinearForce, ForceMode.VelocityChange);
     }
 
     void Update()
     {
         if (jump.action.WasPerformedThisFrame() && isGrounded)
         {
-            doJump = true;
+            Flip();
         }
     }
 

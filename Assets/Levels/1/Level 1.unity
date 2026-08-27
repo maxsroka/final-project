@@ -779,6 +779,10 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 127953058}
+    - target: {fileID: 1449501619298933962, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
+      propertyPath: rotationSpeed
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 6662100171165833948, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
       propertyPath: m_Name
       value: Player

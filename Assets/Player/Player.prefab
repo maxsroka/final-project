@@ -56,8 +56,9 @@ MonoBehaviour:
   camera: {fileID: 0}
   speed: 50
   airborneGravity: 140
-  groundedGravity: 30
-  rotationSpeed: 100
+  groundedGravity: 50
+  flipAngularForce: 15
+  flipLinearForce: 20
 --- !u!114 &8082911030124741646
 MonoBehaviour:
   m_ObjectHideFlags: 0
