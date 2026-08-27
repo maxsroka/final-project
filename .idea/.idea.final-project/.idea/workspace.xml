@@ -7,7 +7,6 @@
     <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Levels/1/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/1/Level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/SoapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/SoapController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +189,8 @@
     <MESSAGE value="added a plate for prototyping" />
     <MESSAGE value="not sure" />
     <MESSAGE value="upload last playtest files" />
-    <option name="LAST_COMMIT_MESSAGE" value="upload last playtest files" />
+    <MESSAGE value="simplifed the flipping code and adjusted the parameters based on feedback" />
+    <option name="LAST_COMMIT_MESSAGE" value="simplifed the flipping code and adjusted the parameters based on feedback" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
