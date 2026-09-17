@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 602124438938521392}
   - component: {fileID: 1449501619298933962}
   - component: {fileID: 8082911030124741646}
+  - component: {fileID: 2390738793628485069}
+  - component: {fileID: 6562177363589893678}
   - component: {fileID: 337179678589495392}
   - component: {fileID: 1516798027161728736}
   - component: {fileID: 1742527991083282141}
@@ -73,10 +75,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SoapShaper
   meshFilter: {fileID: 1742527991083282141}
   meshCollider: {fileID: 7535889686623256293}
+  soapInteractor: {fileID: 6562177363589893678}
   layerMask:
     serializedVersion: 2
     m_Bits: 1
   voxelTime: 10
+--- !u!114 &2390738793628485069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6662100171165833948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d19371ae1c3f0084b8562bb8c171788b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoapCleaner
+  soapInteractor: {fileID: 6562177363589893678}
+  soapMesher: {fileID: 8082911030124741646}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &6562177363589893678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6662100171165833948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1425b9270ea30b04393d2ac2d8c1ff63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoapInteractor
+  soapMesher: {fileID: 8082911030124741646}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!54 &337179678589495392
 Rigidbody:
   m_ObjectHideFlags: 0

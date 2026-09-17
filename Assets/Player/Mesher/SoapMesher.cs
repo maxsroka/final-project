@@ -13,6 +13,7 @@ public class SoapMesher : MonoBehaviour
 {
     [SerializeField] MeshFilter meshFilter;
     [SerializeField] MeshCollider meshCollider;
+    [SerializeField] SoapInteractor soapInteractor;
     [SerializeField] LayerMask layerMask;
     [SerializeField] float voxelTime;
 
@@ -20,11 +21,26 @@ public class SoapMesher : MonoBehaviour
     NativeList<int> indices;
     NativeList<Color32> colors;
 
-    const float VOXEL_SCALE = 0.2f;
-
     VoxelArray voxels;
     float3 meshOffset;
 
+    public const float VOXEL_SCALE = 0.2f;
+
+    public VoxelArray GetVoxels()
+    {
+        return voxels;
+    }
+
+    public Vector3 VoxelToLocalPosition(Vector3 voxelPosition)
+    {
+        return voxelPosition * VOXEL_SCALE - (Vector3)meshOffset + Vector3.one * VOXEL_SCALE / 2;
+    }
+
+    public Vector3 VoxelToWorldPosition(Vector3 voxelPosition)
+    {
+        return transform.TransformPoint(VoxelToLocalPosition(voxelPosition));
+    }
+    
     void FixedUpdate()
     {
         bool anyVoxelsRemoved = false;
@@ -37,21 +53,19 @@ public class SoapMesher : MonoBehaviour
                     var voxel = voxels[x, y, z];
                     if (!voxel.isSolid) continue;
 
-                    var localPosition = new Vector3(x, y, z) * VOXEL_SCALE - (Vector3)meshOffset + Vector3.one * VOXEL_SCALE / 2;
-                    var worldPosition = transform.TransformPoint(localPosition);
-                    var colliders = Physics.CheckSphere(worldPosition, VOXEL_SCALE * 0.75f, layerMask, QueryTriggerInteraction.Ignore);
-                    if (colliders)
+                    var voxelPosition = new Vector3Int(x, y, z);
+                    var doesCollide = soapInteractor.CollisionPoints.ContainsKey(voxelPosition);
+                    if (!doesCollide) continue;
+
+                    if (voxel.time <= 0)
                     {
-                        if (voxel.time <= 0)
-                        {
-                            voxels[x, y, z] = new Voxel();
-                            anyVoxelsRemoved = true;
-                        }
-                        else
-                        {
-                            voxel.time -= Time.deltaTime;
-                            voxels[x, y, z] = voxel;
-                        }
+                        voxels[x, y, z] = new Voxel();
+                        anyVoxelsRemoved = true;
+                    }
+                    else
+                    {
+                        voxel.time -= Time.deltaTime;
+                        voxels[x, y, z] = voxel;
                     }
                 }
             }

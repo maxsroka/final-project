@@ -4,7 +4,18 @@
     <option name="flavorId" value="CMakePlainProjectFlavor" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="" />
+    <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Cleanable/CleanableBlit.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Cleanable/CleanableBlit.shader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/1/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/1/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/1/Plate.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/1/Plate.blend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/1/Plate.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/1/Plate.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Mesher/SoapMesher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Mesher/SoapMesher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,22 +37,28 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0d1a4588b0944a1b95d548788c2017bd2b200/0d/9dd58e6b/Physics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2d13e1d0272a48939db0df2b39041de120ce00/14/14ea1a03/Allocator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2d13e1d0272a48939db0df2b39041de120ce00/ed/0776fca8/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2d13e1d0272a48939db0df2b39041de120ce00/fd/afda7a9e/Mesh.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2f52b751ded44e96b74c2c8a24c6c65b20d200/6f/628cd4c7/Graphics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2f52b751ded44e96b74c2c8a24c6c65b20d200/74/94f37870/NativeArray`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2f52b751ded44e96b74c2c8a24c6c65b20d200/fc/b530fb42/RenderTextureDescriptor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a177e11105454dbeaf690ce2bc62c09b2b200/f1/11462364/Physics.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f4daee0a7aa74c1da85f9f62f53ff1ecb2e00/54/f430622a/int3x2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f4daee0a7aa74c1da85f9f62f53ff1ecb2e00/85/9f604a97/float3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Cleanable/Cleanable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Cleanable/CleanableBlit.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Levels/0/Level 0 (Prototyping).unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Levels/0/Plate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Mesher/Voxel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Mesher/VoxelArray.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Player.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Player/SoapCleaner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/SoapController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Player/SoapInteractor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/BuildGUID.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/GameTimer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeList.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@21a28c3a6c83/InputSystem/Plugins/PlayerInput/PlayerInput.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -188,7 +205,8 @@
     <MESSAGE value="upload last playtest files" />
     <MESSAGE value="simplifed the flipping code and adjusted the parameters based on feedback" />
     <MESSAGE value="added input prompts" />
-    <option name="LAST_COMMIT_MESSAGE" value="added input prompts" />
+    <MESSAGE value="unity upgrade and a new scene" />
+    <option name="LAST_COMMIT_MESSAGE" value="unity upgrade and a new scene" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
