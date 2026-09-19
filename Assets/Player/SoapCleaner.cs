@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class SoapCleaner : MonoBehaviour
 {
@@ -30,6 +28,8 @@ public class SoapCleaner : MonoBehaviour
                 {
                     if (Physics.Raycast(worldPosition, direction, out var hit, SoapMesher.VOXEL_SCALE, layerMask, QueryTriggerInteraction.Ignore))
                     {
+                        if (hit.collider != collider) continue;
+
                         var uv = hit.textureCoord;
                         var cleanable = collider.GetComponent<Cleanable>();
                     

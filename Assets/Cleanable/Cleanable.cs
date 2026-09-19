@@ -11,6 +11,7 @@ public class Cleanable : MonoBehaviour
     [SerializeField] int textureWidth = 512;
     [SerializeField] int textureHeight = 512;
     [SerializeField, Range(0f, 1f)] float cleanThreshold = 0.7f;
+    [SerializeField, Range(0f, 0.1f)] float cleaningPrecision = 0.05f;
     [SerializeField] bool drawDebugTexture;
     
     public float CleanLevel { get; set; }
@@ -31,6 +32,7 @@ public class Cleanable : MonoBehaviour
         sourceTexture = RenderTexture.GetTemporary(textureDescriptor);
         targetTexture = RenderTexture.GetTemporary(textureDescriptor);
         blitMaterial = new Material(Shader.Find("CleanableBlit"));
+        blitMaterial.SetFloat("_Precision", cleaningPrecision);
         meshRenderer.material.SetTexture("_Render_Texture", targetTexture);
         
         collisionUVs = new Vector4[512];

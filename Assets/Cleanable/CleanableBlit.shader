@@ -3,6 +3,7 @@ Shader "CleanableBlit"
     Properties
     {
         _CollisionCount ("Collision Count", Integer) = 0
+        _Precision ("Precision", Float) = 0
     }
     SubShader
     {
@@ -31,6 +32,7 @@ Shader "CleanableBlit"
             
             uniform float4 _CollisionUVs[512];
             int _CollisionCount;
+            float _Precision;
             
             Varyings vert(Attributes IN)
             {
@@ -47,7 +49,7 @@ Shader "CleanableBlit"
                     float2 uv = _CollisionUVs[i].xy;
                     float dist = distance(IN.uv, uv);
                     
-                    if (dist < 0.005)
+                    if (dist < _Precision)
                     {
                         return 1;
                     }

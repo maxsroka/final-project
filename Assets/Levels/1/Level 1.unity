@@ -395,6 +395,50 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &930822278 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4777822719881957763, guid: 31d74d6af71a44f48947309ff117c4ee, type: 3}
+  m_PrefabInstance: {fileID: 2019057613}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &930822282
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930822278}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4904330951386330011, guid: 31d74d6af71a44f48947309ff117c4ee, type: 3}
+--- !u!114 &930822283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930822278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68fbd1109d4f2674bba3e39baa836027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Cleanable
+  textureWidth: 512
+  textureHeight: 512
+  cleanThreshold: 0.7
+  cleaningPrecision: 0.02
+  drawDebugTexture: 0
 --- !u!1001 &943601179
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -523,38 +567,6 @@ PrefabInstance:
     - target: {fileID: 6662100171165833948, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
       propertyPath: m_TagString
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082911030124741646, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
-      propertyPath: baseColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082911030124741646, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
-      propertyPath: baseColor.b
-      value: 0.77254903
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082911030124741646, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
-      propertyPath: baseColor.g
-      value: 0.6509804
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082911030124741646, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
-      propertyPath: baseColor.r
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082911030124741646, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
-      propertyPath: destroyedColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082911030124741646, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
-      propertyPath: destroyedColor.b
-      value: 0.46868423
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082911030124741646, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
-      propertyPath: destroyedColor.g
-      value: 0.32999998
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082911030124741646, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
-      propertyPath: destroyedColor.r
-      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -766,6 +778,7 @@ MonoBehaviour:
   textureWidth: 512
   textureHeight: 512
   cleanThreshold: 0.7
+  cleaningPrecision: 0.007
   drawDebugTexture: 0
 --- !u!64 &1957207502
 MeshCollider:
@@ -992,6 +1005,10 @@ PrefabInstance:
     - target: {fileID: -4777822719881957763, guid: 31d74d6af71a44f48947309ff117c4ee, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4777822719881957763, guid: 31d74d6af71a44f48947309ff117c4ee, type: 3}
+      propertyPath: m_TagString
+      value: Cleanable
       objectReference: {fileID: 0}
     - target: {fileID: -4683584355577872812, guid: 31d74d6af71a44f48947309ff117c4ee, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1327,6 +1344,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8016585595145403355, guid: 31d74d6af71a44f48947309ff117c4ee, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1957207501}
+    - targetCorrespondingSourceObject: {fileID: -4777822719881957763, guid: 31d74d6af71a44f48947309ff117c4ee, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 930822282}
+    - targetCorrespondingSourceObject: {fileID: -4777822719881957763, guid: 31d74d6af71a44f48947309ff117c4ee, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 930822283}
   m_SourcePrefab: {fileID: 100100000, guid: 31d74d6af71a44f48947309ff117c4ee, type: 3}
 --- !u!114 &2094355946 stripped
 MonoBehaviour:
