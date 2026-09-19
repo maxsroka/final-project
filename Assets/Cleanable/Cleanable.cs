@@ -19,7 +19,7 @@ public class Cleanable : MonoBehaviour
     MeshRenderer meshRenderer;
     RenderTexture sourceTexture;
     RenderTexture targetTexture;
-    Material material;
+    Material blitMaterial;
     Vector4[] collisionUVs;
     int collisionCount;
 
@@ -30,7 +30,7 @@ public class Cleanable : MonoBehaviour
         var textureDescriptor = new RenderTextureDescriptor(textureWidth, textureHeight, RenderTextureFormat.R8);
         sourceTexture = RenderTexture.GetTemporary(textureDescriptor);
         targetTexture = RenderTexture.GetTemporary(textureDescriptor);
-        material = new Material(Shader.Find("CleanableBlit"));
+        blitMaterial = new Material(Shader.Find("CleanableBlit"));
         meshRenderer.material.SetTexture("_Render_Texture", targetTexture);
         
         collisionUVs = new Vector4[512];
@@ -70,10 +70,10 @@ public class Cleanable : MonoBehaviour
     {
         if (collisionCount == 0) return;
         
-        material.SetInteger("_CollisionCount", collisionCount);
-        material.SetVectorArray("_CollisionUVs", collisionUVs);
+        blitMaterial.SetInteger("_CollisionCount", collisionCount);
+        blitMaterial.SetVectorArray("_CollisionUVs", collisionUVs);
         
-        Graphics.Blit(sourceTexture, targetTexture, material);
+        Graphics.Blit(sourceTexture, targetTexture, blitMaterial);
         (sourceTexture, targetTexture) = (targetTexture, sourceTexture);
         
         collisionCount = 0;
@@ -124,6 +124,11 @@ public class Cleanable : MonoBehaviour
         if (GetComponent<MeshCollider>().convex)
         {
             Debug.LogWarning($"The object '{name}' has a Cleanable component attached, but its Mesh Collider is convex.", this);
+        }
+
+        if (GetComponent<MeshRenderer>() != null && GetComponent<MeshRenderer>().sharedMaterial != null && GetComponent<MeshRenderer>().sharedMaterial.shader.name != "Shader Graphs/Cleanable")
+        {
+            Debug.LogWarning($"The object '{name}' has a Cleanable component attached, but its material is not using the Cleanable shader.", this);
         }
     }
 }

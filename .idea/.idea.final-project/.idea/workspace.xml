@@ -7,16 +7,8 @@
     <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Cleanable/Cleanable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cleanable/Cleanable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cleanable/Cleanable.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cleanable/Cleanable.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cleanable/CleanableBlit.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cleanable/CleanableBlit.shader" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Levels/1/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/1/Level 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Levels/1/Plate.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/1/Plate.blend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Mesher/SoapMesher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Mesher/SoapMesher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Soap.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Soap.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/SoapCleaner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/SoapCleaner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/Hud.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Hud.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
