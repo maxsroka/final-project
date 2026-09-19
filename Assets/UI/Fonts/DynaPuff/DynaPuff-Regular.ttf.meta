@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2083b924d0f4881438a2916b44b2fcfa
+guid: 14123c4ae8e712840b2f7f29c0ddff96
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - IBM 3270
+  - DynaPuff
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

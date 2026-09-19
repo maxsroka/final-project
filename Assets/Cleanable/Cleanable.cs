@@ -90,8 +90,6 @@ public class Cleanable : MonoBehaviour
             Graphics.Blit(Texture2D.whiteTexture, targetTexture);
             meshRenderer.material.SetTexture("_Render_Texture", targetTexture);
         }
-        
-        GameObject.Find("Clean Percentage Text").GetComponent<TextMeshProUGUI>().SetText($"{Mathf.FloorToInt(CleanLevel * 100f)}% clean");
     }
 
     float GetAverageWhiteLevel()

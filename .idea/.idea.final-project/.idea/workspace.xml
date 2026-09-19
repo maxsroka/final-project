@@ -7,12 +7,16 @@
     <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Cleanable/Cleanable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cleanable/Cleanable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cleanable/CleanableBlit.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cleanable/CleanableBlit.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cleanable/Plate Outside.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cleanable/Plate Outside.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Levels/1/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/1/Level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/1/Plate.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/1/Plate.blend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/SoapCleaner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/SoapCleaner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/Fonts/3270-Regular SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/Fonts/3270-Regular SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/Fonts/3270-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/Fonts/3270-Regular.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/Fonts/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/Fonts/LICENSE.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/Hud.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Hud.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +55,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Cleanable/CleanableBlit.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Levels/0/Level 0 (Prototyping).unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Levels/0/Plate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Levels/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Mesher/Voxel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Mesher/VoxelArray.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Player.prefab" root0="FORCE_HIGHLIGHTING" />
@@ -59,6 +64,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Player/SoapInteractor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/BuildGUID.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/GameTimer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UI/LevelInfo.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -208,7 +214,8 @@
     <MESSAGE value="unity upgrade and a new scene" />
     <MESSAGE value="playtest preparation" />
     <MESSAGE value="improved the plate model" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved the plate model" />
+    <MESSAGE value="fixed more issues with cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed more issues with cleaning" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
