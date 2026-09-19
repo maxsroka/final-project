@@ -1,28 +1,39 @@
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering;
+using UnityEngine.Rendering;
 
-[RequireComponent(typeof(MeshRenderer))]
+[RequireComponent(typeof(MeshRenderer), typeof(MeshCollider))]
 public class Cleanable : MonoBehaviour
 {
     [SerializeField] int textureWidth = 512;
     [SerializeField] int textureHeight = 512;
+    [SerializeField, Range(0f, 1f)] float cleanThreshold = 0.7f;
+    [SerializeField] bool drawDebugTexture;
+    
+    public float CleanLevel { get; set; }
+    public bool IsClean => CleanLevel >= 1f;
     
     MeshRenderer meshRenderer;
     RenderTexture sourceTexture;
     RenderTexture targetTexture;
     Material material;
-    Vector4[] uvs;
-    int uvCount;
+    Vector4[] collisionUVs;
+    int collisionCount;
 
     void Awake()
     {
         meshRenderer = GetComponent<MeshRenderer>();
-        sourceTexture = RenderTexture.GetTemporary(new RenderTextureDescriptor(textureWidth, textureHeight, RenderTextureFormat.R8));
-        targetTexture = RenderTexture.GetTemporary(new RenderTextureDescriptor(textureWidth, textureHeight, RenderTextureFormat.R8));
+        
+        var textureDescriptor = new RenderTextureDescriptor(textureWidth, textureHeight, RenderTextureFormat.R8);
+        sourceTexture = RenderTexture.GetTemporary(textureDescriptor);
+        targetTexture = RenderTexture.GetTemporary(textureDescriptor);
         material = new Material(Shader.Find("CleanableBlit"));
-        uvs = new Vector4[512];
         meshRenderer.material.SetTexture("_Render_Texture", targetTexture);
+        
+        collisionUVs = new Vector4[512];
     }
 
     void OnDestroy()
@@ -33,33 +44,86 @@ public class Cleanable : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.DrawTexture(new Rect(0, 0, textureWidth, textureHeight), targetTexture);
+        if (drawDebugTexture)
+        {
+            GUI.DrawTexture(new Rect(0, 0, textureWidth, textureHeight), targetTexture);
+        }
     }
 
     void Update()
     {
-        if (uvCount == 0) return;
+        if (IsClean) return;
         
-        material.SetInteger("_TargetUVsCount", uvCount);
-        material.SetVectorArray("_TargetUVs", uvs);
-        
-        Graphics.Blit(sourceTexture, targetTexture, material);
-        (sourceTexture, targetTexture) = (targetTexture, sourceTexture);
-
-        uvCount = 0;
+        UpdateRenderTexture();
+        UpdateCleanLevel();
     }
 
     public void OnCollision(Vector2 uv)
     {
-        uvs[uvCount] = uv;
-        uvCount += 1;
+        if (IsClean) return;
+        
+        collisionUVs[collisionCount] = uv;
+        collisionCount += 1;
     }
-    
+
+    void UpdateRenderTexture()
+    {
+        if (collisionCount == 0) return;
+        
+        material.SetInteger("_CollisionCount", collisionCount);
+        material.SetVectorArray("_CollisionUVs", collisionUVs);
+        
+        Graphics.Blit(sourceTexture, targetTexture, material);
+        (sourceTexture, targetTexture) = (targetTexture, sourceTexture);
+        
+        collisionCount = 0;
+    }
+
+    void UpdateCleanLevel()
+    {
+        CleanLevel = Mathf.Max(Mathf.Min(GetAverageWhiteLevel() / cleanThreshold, 1f), CleanLevel);
+        
+        if (IsClean)
+        {
+            Graphics.Blit(Texture2D.whiteTexture, targetTexture);
+            meshRenderer.material.SetTexture("_Render_Texture", targetTexture);
+        }
+        
+        GameObject.Find("Clean Percentage Text").GetComponent<TextMeshProUGUI>().SetText($"{Mathf.FloorToInt(CleanLevel * 100f)}% clean");
+    }
+
+    float GetAverageWhiteLevel()
+    {
+        var textureDescriptor = new RenderTextureDescriptor(64, 64, RenderTextureFormat.R8);
+        var temp = RenderTexture.GetTemporary(textureDescriptor);
+        Graphics.Blit(sourceTexture, temp);
+
+        var req = AsyncGPUReadback.Request(temp);
+        req.WaitForCompletion();
+        
+        var data = req.GetData<Color32>();
+        float sum = 0;
+        int len = data.Length;
+        for (int i = 0; i < len; i++)
+        {
+            sum += data[i][0];
+        }
+        var avg = sum / len / 255f;
+
+        RenderTexture.ReleaseTemporary(temp);
+        return avg;
+    }
+
     void OnValidate()
     {
         if (!gameObject.CompareTag("Cleanable"))
         {
             Debug.LogWarning($"The object '{name}' has a Cleanable component attached, but its tag isn't set to Cleanable.", this);
+        }
+
+        if (GetComponent<MeshCollider>().convex)
+        {
+            Debug.LogWarning($"The object '{name}' has a Cleanable component attached, but its Mesh Collider is convex.", this);
         }
     }
 }

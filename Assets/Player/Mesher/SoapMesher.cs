@@ -16,6 +16,8 @@ public class SoapMesher : MonoBehaviour
     [SerializeField] SoapInteractor soapInteractor;
     [SerializeField] LayerMask layerMask;
     [SerializeField] float voxelTime;
+    [SerializeField] Color baseColor;
+    [SerializeField] Color destroyedColor;
 
     NativeList<float3> vertices;
     NativeList<int> indices;
@@ -159,7 +161,7 @@ public class SoapMesher : MonoBehaviour
         var position = new int3(x, y, z);
         var voxel = voxels[x, y, z];
         if (!voxel.isSolid) return;
-        var color = Color32.Lerp(Color.gray, Color.white, voxel.time / voxelTime);
+        var color = Color32.Lerp(destroyedColor, baseColor, voxel.time / voxelTime);
         
         // left
         

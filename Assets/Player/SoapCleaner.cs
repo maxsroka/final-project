@@ -28,7 +28,7 @@ public class SoapCleaner : MonoBehaviour
                 var directions = new Vector3[] { Vector3.up, Vector3.left, Vector3.back, Vector3.right, Vector3.forward, Vector3.down };
                 foreach (var direction in directions)
                 {
-                    if (Physics.Raycast(worldPosition, direction, out var hit, SoapMesher.VOXEL_SCALE / 2f, layerMask, QueryTriggerInteraction.Ignore))
+                    if (Physics.Raycast(worldPosition, direction, out var hit, SoapMesher.VOXEL_SCALE, layerMask, QueryTriggerInteraction.Ignore))
                     {
                         var uv = hit.textureCoord;
                         var cleanable = collider.GetComponent<Cleanable>();

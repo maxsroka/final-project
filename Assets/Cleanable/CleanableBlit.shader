@@ -2,8 +2,7 @@ Shader "CleanableBlit"
 {
     Properties
     {
-//        _TargetUV ("Target UV", Vector) = (0, 0, 0, 0)
-        _TargetUVsCount ("Target UVs Count", Integer) = 0
+        _CollisionCount ("Collision Count", Integer) = 0
     }
     SubShader
     {
@@ -30,8 +29,8 @@ Shader "CleanableBlit"
                 float2 uv : TEXCOORD0;
             };
             
-            uniform float4 _TargetUVs[512];
-            int _TargetUVsCount;
+            uniform float4 _CollisionUVs[512];
+            int _CollisionCount;
             
             Varyings vert(Attributes IN)
             {
@@ -43,12 +42,12 @@ Shader "CleanableBlit"
             
             half4 frag(Varyings IN) : SV_TARGET
             {
-                for (int i = 0; i < _TargetUVsCount; i++)
+                for (int i = 0; i < _CollisionCount; i++)
                 {
-                    float2 uv = _TargetUVs[i].xy;
+                    float2 uv = _CollisionUVs[i].xy;
                     float dist = distance(IN.uv, uv);
                     
-                    if (dist < 0.004)
+                    if (dist < 0.005)
                     {
                         return 1;
                     }
