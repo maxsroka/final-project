@@ -153,7 +153,7 @@ public class SoapMesher : MonoBehaviour
         
         if (areVerticesEmpty)
         {
-            levelManager.OnTimeOut();
+            levelManager.OnFail();
         }
     }
 

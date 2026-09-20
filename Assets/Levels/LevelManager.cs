@@ -1,4 +1,6 @@
 using System;
+using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,59 +11,59 @@ public class LevelManager : MonoBehaviour
     [field: SerializeField] public Color LevelColor { get; private set; }
     [field: SerializeField] public Cleanable[] Cleanables { get; private set; }
     [field: SerializeField] public float Timer { get; private set; }
-    [SerializeField] LevelEnd levelEnd;
+    public LevelStatus Status { get; private set; }
+
+    [SerializeField] Canvas canvas;
+    [SerializeField] TextMeshProUGUI title;
+    [SerializeField] TextMeshProUGUI description;
     [SerializeField] string nextLevelName;
 
-    bool isComplete;
+    public enum LevelStatus
+    {
+        Playing,
+        Failed,
+        Completed
+    }
     
     void Update()
     {
-        if (isComplete) return;
+        if (Status != LevelStatus.Playing) return;
 
         Timer += Time.deltaTime;
-        
-        bool areAllClean = true;
-        foreach (var cleanable in Cleanables)
-        {
-            if (!cleanable.IsClean)
-            {
-                areAllClean = false;
-                break;
-            }
-        }
 
-        if (areAllClean)
+        if (Cleanables.All(c => c.IsClean))
         {
-            levelEnd.Show(true);
-            isComplete = true;
+            OnComplete();
         }
     }
 
-    public void OnTimeOut()
+    public void OnFail()
     {
-        levelEnd.Show(false);
+        Status = LevelStatus.Failed;
+        ShowUI();
     }
 
-    void LoadNextLevel()
+    public void OnComplete()
     {
-        SceneManager.LoadScene(nextLevelName);
+        Status = LevelStatus.Completed;
+        ShowUI();
     }
 
-    void ReloadLevel()
+    public void ShowUI()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        canvas.enabled = true;
+        title.color = LevelColor;
+        title.SetText(Status == LevelStatus.Completed ? $"Level {LevelNumber}: Complete" : "Time's out: you've melted!");
+
+        var cleanablesLength = Cleanables.Length;
+        var time = TimeSpan.FromSeconds(Timer).ToString("mm\\:ss");
+        var cleanCount = Cleanables.Count(c => c.IsClean);
+        description.SetText($"Objects Cleaned: {cleanCount}/{cleanablesLength}\nTime spent cleaning: {time}");
     }
 
     public void OnProceed()
     {
-        if (isComplete)
-        {
-            LoadNextLevel();
-        }
-        else
-        {
-            ReloadLevel();
-        }
+        SceneManager.LoadScene(Status == LevelStatus.Completed ? nextLevelName : SceneManager.GetActiveScene().name);
     }
 
     void OnValidate()
