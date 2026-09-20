@@ -6,11 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cleanable/Cleanable.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cleanable/Cleanable.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cleanable/CleanableBlit.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cleanable/CleanableBlit.shader.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Levels/1/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/1/Level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Manager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Menu/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu/Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Mood Survey/MoodSurvey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mood Survey/MoodSurvey.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Camera/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Camera/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +92,16 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/FP_Test_build\final-project.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Max\Desktop\FP_Test_build" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.5.10f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath D:\final-project -debugCodeOptimization" />
@@ -212,7 +227,8 @@
     <MESSAGE value="level end ui" />
     <MESSAGE value="level visuals improvements" />
     <MESSAGE value="readded fall trigger" />
-    <option name="LAST_COMMIT_MESSAGE" value="readded fall trigger" />
+    <MESSAGE value="pause game when ui is displayed" />
+    <option name="LAST_COMMIT_MESSAGE" value="pause game when ui is displayed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -229,11 +245,6 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="SourceShaderBreakpointType">
-          <url>file://$PROJECT_DIR$/Assets/Cleanable/CleanableBlit.shader</url>
-          <line>15</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

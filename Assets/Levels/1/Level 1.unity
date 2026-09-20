@@ -1711,6 +1711,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8750820147944109384, guid: 363d5bf3142573d4cb276a74a5371d8b, type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 2136183058}
+    - target: {fileID: 8750820147944109384, guid: 363d5bf3142573d4cb276a74a5371d8b, type: 3}
       propertyPath: pauseManager
       value: 
       objectReference: {fileID: 4489028443325605018}

@@ -5,16 +5,17 @@ using UnityEngine.UI;
 public class MoodSurvey : MonoBehaviour
 {
     [SerializeField] PauseManager pauseManager;
+    [SerializeField] LevelManager levelManager;
     [SerializeField] Canvas canvas;
     [SerializeField] Slider slider;
-    
+
     public void OnAccept()
     {
         var moodValue = Mathf.Round(slider.value * 1000f) / 1000f;
         PlayerPrefs.SetFloat("last_mood", moodValue);
         
         var moodString = PlayerPrefs.GetString("mood_string", "");
-        moodString += " " + moodValue;
+        moodString += $" {levelManager.LevelNumber}:{moodValue}";
         PlayerPrefs.SetString("mood_string", moodString);
         
         Hide();
