@@ -94,7 +94,9 @@ public class Cleanable : MonoBehaviour
 
     float GetAverageWhiteLevel()
     {
-        var textureDescriptor = new RenderTextureDescriptor(64, 64, RenderTextureFormat.R8);
+        var scale = Mathf.Clamp(textureWidth / 256, 1, 4);
+        var size = 64 * scale;
+        var textureDescriptor = new RenderTextureDescriptor(size, size, RenderTextureFormat.R8);
         var temp = RenderTexture.GetTemporary(textureDescriptor);
         Graphics.Blit(sourceTexture, temp);
 

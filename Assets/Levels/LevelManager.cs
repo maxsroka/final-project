@@ -59,6 +59,7 @@ public class LevelManager : MonoBehaviour
 
     public void OnFail()
     {
+        pauseManager.Pause();
         attemptCount++;
         Status = LevelStatus.Failed;
         ShowUI();

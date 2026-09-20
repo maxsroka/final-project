@@ -1,8 +1,14 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+    void Start()
+    {
+        SceneManager.LoadScene("Room/Room (Baked Lighting)", LoadSceneMode.Additive);
+    }
+
     public void OnStartGame()
     {
         SceneManager.LoadScene("Level 1");
