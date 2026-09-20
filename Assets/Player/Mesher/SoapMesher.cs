@@ -11,6 +11,7 @@ using Random = UnityEngine.Random;
 
 public class SoapMesher : MonoBehaviour
 {
+    [SerializeField] LevelManager levelManager;
     [SerializeField] MeshFilter meshFilter;
     [SerializeField] MeshCollider meshCollider;
     [SerializeField] SoapInteractor soapInteractor;
@@ -152,7 +153,7 @@ public class SoapMesher : MonoBehaviour
         
         if (areVerticesEmpty)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            levelManager.OnTimeOut();
         }
     }
 

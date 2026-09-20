@@ -12,7 +12,7 @@ public class CameraController : MonoBehaviour
     
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        // Cursor.lockState = CursorLockMode.Locked;
         rotation = transform.rotation.eulerAngles;
     }
 
