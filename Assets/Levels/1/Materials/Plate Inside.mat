@@ -97,7 +97,7 @@ Material:
     - _AddPrecomputedVelocity: 0
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _Base_Smoothness: 0.941
+    - _Base_Smoothness: 0.757
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
@@ -112,13 +112,13 @@ Material:
     - _Dirt_Min: 0.8
     - _Dirt_Minimum_Intensity: 0
     - _Dirt_Noise_Amount: 0
-    - _Dirt_Noise_Max: 0.07
-    - _Dirt_Noise_Min: 0.01
-    - _Dirt_Noise_Scale: 9.85
+    - _Dirt_Noise_Max: -0.03
+    - _Dirt_Noise_Min: -0.1
+    - _Dirt_Noise_Scale: 23
     - _Dirt_Noise_Visibility: 0.808
     - _Dirt_Scale: 5
     - _Dirt_Smoothness: 0.225
-    - _Dirt_Visibility: 0.881
+    - _Dirt_Visibility: 0.841
     - _Dirtiness: 1
     - _DstBlend: 0
     - _DstBlendAlpha: 0
@@ -144,6 +144,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Base_Color: {r: 0.91823894, g: 0.91823894, b: 0.91823894, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Dirt_Min_Max: {r: 0.05, g: 0.2, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

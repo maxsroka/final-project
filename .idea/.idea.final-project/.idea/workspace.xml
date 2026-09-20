@@ -4,22 +4,7 @@
     <option name="flavorId" value="CMakePlainProjectFlavor" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/1/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/1/Level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/LevelEnd.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/LevelEnd.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/LevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mood.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mood/MoodSurvey.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mood/MoodSurvey.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mood/button_rectangle_depth_gradient.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mood/button_rectangle_depth_gradient.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mood/slide_horizontal_grey.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mood/slide_horizontal_grey.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Mesher/SoapMesher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Mesher/SoapMesher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,7 +203,8 @@
     <MESSAGE value="improved the plate model" />
     <MESSAGE value="fixed more issues with cleaning" />
     <MESSAGE value="reorganized files + ui work" />
-    <option name="LAST_COMMIT_MESSAGE" value="reorganized files + ui work" />
+    <MESSAGE value="level end ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="level end ui" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
