@@ -242,6 +242,7 @@ GameObject:
   - component: {fileID: 1325719848557945108}
   - component: {fileID: 5679861415898134916}
   - component: {fileID: 4686673831205003102}
+  - component: {fileID: 5872879253579408930}
   m_Layer: 0
   m_Name: Level Manager
   m_TagString: Untagged
@@ -304,6 +305,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PauseManager
   soapController: {fileID: 0}
   cameraController: {fileID: 0}
+--- !u!114 &5872879253579408930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2371502868515188126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f75f3297ae8e24ebe8ffe80b38d309, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StatsManager
 --- !u!1 &3276490072040348873
 GameObject:
   m_ObjectHideFlags: 0

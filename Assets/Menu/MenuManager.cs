@@ -27,6 +27,11 @@ public class MenuManager : MonoBehaviour
     public void OnCopySurveyData()
     {
         var moodString = PlayerPrefs.GetString("mood_string", "");
-        GUIUtility.systemCopyBuffer = $"level_number:mood_value{moodString}";
+
+        var avgFrameRate = Mathf.RoundToInt(PlayerPrefs.GetFloat("frame_rate_avg"));
+        var minFrameRate = Mathf.RoundToInt(PlayerPrefs.GetFloat("frame_rate_min"));
+        var maxFrameRate = Mathf.RoundToInt(PlayerPrefs.GetFloat("frame_rate_max"));
+        
+        GUIUtility.systemCopyBuffer = $"level_number:mood_value{moodString} | avg_fps:{avgFrameRate} min_fps:{minFrameRate} max_fps:{maxFrameRate}";
     }
 }

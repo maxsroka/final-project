@@ -6,13 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cleanable/Cleanable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cleanable/Cleanable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/2/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/2/Level 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Manager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Menu/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu/Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Menu/MenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu/MenuManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/FreeRoom_Version03 Modified Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/FreeRoom_Version03 Modified Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting).unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting).unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +224,8 @@
     <MESSAGE value="pause game when ui is displayed" />
     <MESSAGE value="fixed some shader issues" />
     <MESSAGE value="level manager fix and lighting data moved" />
-    <option name="LAST_COMMIT_MESSAGE" value="level manager fix and lighting data moved" />
+    <MESSAGE value="fixed some visual artifacts and bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed some visual artifacts and bugs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
