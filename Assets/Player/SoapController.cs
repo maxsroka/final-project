@@ -15,10 +15,20 @@ public class SoapController : MonoBehaviour
     [SerializeField] float flipLinearForce;
 
     bool isGrounded;
+    Vector3 startPosition;
+    Quaternion startRotation;
+
+    public void ResetPositionAndRotation()
+    {
+        transform.position = startPosition;
+        transform.rotation = startRotation;
+    }
     
     void Start()
     {
         InputSystem.actions.Enable();
+        startPosition = transform.position;
+        startRotation = transform.rotation;
     }
 
     void FixedUpdate()

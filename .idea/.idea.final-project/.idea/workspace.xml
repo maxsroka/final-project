@@ -4,7 +4,16 @@
     <option name="flavorId" value="CMakePlainProjectFlavor" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="" />
+    <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/1/FreeRoomModified.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/1/FreeRoomModified.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/1/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/1/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/1/Level 1/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/1/Level 1/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/SoapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/SoapController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/Hud.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Hud.prefab" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -204,7 +213,8 @@
     <MESSAGE value="fixed more issues with cleaning" />
     <MESSAGE value="reorganized files + ui work" />
     <MESSAGE value="level end ui" />
-    <option name="LAST_COMMIT_MESSAGE" value="level end ui" />
+    <MESSAGE value="level visuals improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="level visuals improvements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
