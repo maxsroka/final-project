@@ -10,9 +10,8 @@ public class CameraController : MonoBehaviour
     
     Vector3 rotation;
     
-    void Start()
+    void Awake()
     {
-        // Cursor.lockState = CursorLockMode.Locked;
         rotation = transform.rotation.eulerAngles;
     }
 

@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class MoodSurvey : MonoBehaviour
 {
+    [SerializeField] PauseManager pauseManager;
     [SerializeField] Canvas canvas;
     [SerializeField] Slider slider;
     
@@ -19,20 +20,17 @@ public class MoodSurvey : MonoBehaviour
         Hide();
     }
 
-    void Start()
+    public void Show()
     {
-        Show();
-    }
-
-    void Show()
-    {
+        pauseManager.Pause();
         var lastMood = PlayerPrefs.GetFloat("last_mood", 0f);
         slider.value = lastMood;
         canvas.enabled = true;
     }
     
-    void Hide()
+    public void Hide()
     {
+        pauseManager.Resume();
         canvas.enabled = false;
     }
 }

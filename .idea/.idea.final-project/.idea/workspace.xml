@@ -6,13 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/1/FreeRoomModified.blend" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/1/FreeRoomModified.blend.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Levels/1/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/1/Level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/1/Level 1/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/1/Level 1/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/SoapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/SoapController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/Hud.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Hud.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Manager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mood Survey/MoodSurvey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mood Survey/MoodSurvey.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Camera/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Camera/CameraController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,9 +47,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f4daee0a7aa74c1da85f9f62f53ff1ecb2e00/85/9f604a97/float3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Cleanable/Cleanable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Cleanable/CleanableBlit.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Levels/LevelEnd.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Levels/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Mood/MoodSurvey.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Levels/PauseManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Mesher/Voxel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Mesher/VoxelArray.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Player.prefab" root0="FORCE_HIGHLIGHTING" />
@@ -214,7 +211,8 @@
     <MESSAGE value="reorganized files + ui work" />
     <MESSAGE value="level end ui" />
     <MESSAGE value="level visuals improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="level visuals improvements" />
+    <MESSAGE value="readded fall trigger" />
+    <option name="LAST_COMMIT_MESSAGE" value="readded fall trigger" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

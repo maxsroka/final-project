@@ -241,6 +241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1325719848557945108}
   - component: {fileID: 5679861415898134916}
+  - component: {fileID: 4686673831205003102}
   m_Layer: 0
   m_Name: Level Manager
   m_TagString: Untagged
@@ -287,6 +288,22 @@ MonoBehaviour:
   title: {fileID: 5516088411659646140}
   description: {fileID: 4512771463288305896}
   nextLevelName: Level 2
+  moodSurvey: {fileID: 0}
+  pauseManager: {fileID: 4686673831205003102}
+--- !u!114 &4686673831205003102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2371502868515188126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36edda8e372c7b749962c061d051e462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseManager
+  soapController: {fileID: 0}
+  cameraController: {fileID: 0}
 --- !u!1 &3276490072040348873
 GameObject:
   m_ObjectHideFlags: 0

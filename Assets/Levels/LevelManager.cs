@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Linq;
 using TMPro;
 using UnityEngine;
@@ -17,6 +18,20 @@ public class LevelManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI title;
     [SerializeField] TextMeshProUGUI description;
     [SerializeField] string nextLevelName;
+    [SerializeField] MoodSurvey moodSurvey;
+    [SerializeField] PauseManager pauseManager;
+
+    static int attemptCount = 0;
+
+    IEnumerator Start()
+    {
+        yield return null;
+        if (attemptCount == 0)
+        {
+            moodSurvey.Show();
+            attemptCount++;
+        }
+    }
 
     public enum LevelStatus
     {
@@ -33,18 +48,27 @@ public class LevelManager : MonoBehaviour
 
         if (Cleanables.All(c => c.IsClean))
         {
-            OnComplete();
+            StartCoroutine(OnCompleteDelayed());
         }
     }
 
     public void OnFail()
     {
+        attemptCount++;
         Status = LevelStatus.Failed;
         ShowUI();
     }
 
+    public IEnumerator OnCompleteDelayed()
+    {
+        yield return new WaitForSeconds(1f);
+        OnComplete();
+    }
+
     public void OnComplete()
     {
+        pauseManager.Pause();
+        attemptCount = 0;
         Status = LevelStatus.Completed;
         ShowUI();
     }

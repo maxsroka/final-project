@@ -190,6 +190,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4139778769235916224, guid: 5ccb1554267d8ec4eabf725a5645b26d, type: 3}
   m_PrefabInstance: {fileID: 943601179}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &345687729 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6913807489588455167, guid: 5ccb1554267d8ec4eabf725a5645b26d, type: 3}
+  m_PrefabInstance: {fileID: 943601179}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6198d6b4f42185d4b9b6f587c08c2f25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraController
+--- !u!114 &504081706 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8750820147944109384, guid: 363d5bf3142573d4cb276a74a5371d8b, type: 3}
+  m_PrefabInstance: {fileID: 8672618735103508734}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5174af63b7040724e9250ec2827eca06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoodSurvey
 --- !u!1 &716188652
 GameObject:
   m_ObjectHideFlags: 1
@@ -1241,6 +1263,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1425b9270ea30b04393d2ac2d8c1ff63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoapInteractor
+--- !u!114 &2094355953 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1449501619298933962, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
+  m_PrefabInstance: {fileID: 951888563}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df7cfe9fecb82ec498b8ed3a4b9d82c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoapController
 --- !u!1 &2130004845 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5498120680250951802, guid: 0892cdf1f087479489c4fba7f9732cde, type: 3}
@@ -1525,6 +1558,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 4686673831205003102, guid: 82c736c13777d724dae4a35b1b273e81, type: 3}
+      propertyPath: soapController
+      value: 
+      objectReference: {fileID: 2094355953}
+    - target: {fileID: 4686673831205003102, guid: 82c736c13777d724dae4a35b1b273e81, type: 3}
+      propertyPath: cameraController
+      value: 
+      objectReference: {fileID: 345687729}
+    - target: {fileID: 5679861415898134916, guid: 82c736c13777d724dae4a35b1b273e81, type: 3}
+      propertyPath: moodSurvey
+      value: 
+      objectReference: {fileID: 504081706}
     - target: {fileID: 5679861415898134916, guid: 82c736c13777d724dae4a35b1b273e81, type: 3}
       propertyPath: '<Cleanables>k__BackingField.Array.data[0]'
       value: 
@@ -1538,6 +1583,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82c736c13777d724dae4a35b1b273e81, type: 3}
+--- !u!114 &4489028443325605018 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4686673831205003102, guid: 82c736c13777d724dae4a35b1b273e81, type: 3}
+  m_PrefabInstance: {fileID: 4489028443325605017}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36edda8e372c7b749962c061d051e462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseManager
 --- !u!1001 &8672618735103508734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1548,23 +1604,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 374020915469150702, guid: 363d5bf3142573d4cb276a74a5371d8b, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 374020915469150702, guid: 363d5bf3142573d4cb276a74a5371d8b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1187053243396189824, guid: 363d5bf3142573d4cb276a74a5371d8b, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1187053243396189824, guid: 363d5bf3142573d4cb276a74a5371d8b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1187053243396189824, guid: 363d5bf3142573d4cb276a74a5371d8b, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4446822804986436450, guid: 363d5bf3142573d4cb276a74a5371d8b, type: 3}
       propertyPath: m_Name
@@ -1572,7 +1628,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4446822804986436450, guid: 363d5bf3142573d4cb276a74a5371d8b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4903714549964128233, guid: 363d5bf3142573d4cb276a74a5371d8b, type: 3}
       propertyPath: m_Pivot.x
@@ -1654,6 +1710,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8750820147944109384, guid: 363d5bf3142573d4cb276a74a5371d8b, type: 3}
+      propertyPath: pauseManager
+      value: 
+      objectReference: {fileID: 4489028443325605018}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
