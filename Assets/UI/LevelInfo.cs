@@ -10,6 +10,7 @@ public class LevelInfo : MonoBehaviour
 
     void Start()
     {
+        levelName.color = levelManager.LevelColor;
         levelName.SetText($"Level {levelManager.LevelNumber}: {levelManager.LevelName}");
     }
 

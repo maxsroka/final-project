@@ -23,6 +23,11 @@ public class LevelManager : MonoBehaviour
 
     static int attemptCount = 0;
 
+    void Awake()
+    {
+        SceneManager.LoadScene("Room/Room (Baked Lighting)", LoadSceneMode.Additive);
+    }
+
     IEnumerator Start()
     {
         yield return null;
