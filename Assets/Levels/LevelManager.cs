@@ -96,6 +96,11 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene(Status == LevelStatus.Completed ? nextLevelName : SceneManager.GetActiveScene().name);
     }
 
+    public void OnGoBack()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
     void OnValidate()
     {
         if (Cleanables.Length == 0)
