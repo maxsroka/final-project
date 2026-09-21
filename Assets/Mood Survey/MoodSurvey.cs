@@ -9,6 +9,8 @@ public class MoodSurvey : MonoBehaviour
     [SerializeField] Canvas canvas;
     [SerializeField] Slider slider;
 
+    Action callback;
+    
     public void OnAccept()
     {
         var moodValue = Mathf.Round(slider.value * 1000f) / 1000f;
@@ -21,8 +23,9 @@ public class MoodSurvey : MonoBehaviour
         Hide();
     }
 
-    public void Show()
+    public void Show(Action callback = null)
     {
+        this.callback = callback;
         pauseManager.Pause();
         var lastMood = PlayerPrefs.GetFloat("last_mood", 0f);
         slider.value = lastMood;
@@ -33,5 +36,6 @@ public class MoodSurvey : MonoBehaviour
     {
         pauseManager.Resume();
         canvas.enabled = false;
+        callback?.Invoke();
     }
 }

@@ -331,6 +331,10 @@ PrefabInstance:
       value: Menu
       objectReference: {fileID: 0}
     - target: {fileID: 5679861415898134916, guid: 82c736c13777d724dae4a35b1b273e81, type: 3}
+      propertyPath: showSurveyAfterCompletion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679861415898134916, guid: 82c736c13777d724dae4a35b1b273e81, type: 3}
       propertyPath: <LevelName>k__BackingField
       value: Water Madness
       objectReference: {fileID: 0}

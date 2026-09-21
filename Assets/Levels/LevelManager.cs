@@ -20,6 +20,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] string nextLevelName;
     [SerializeField] MoodSurvey moodSurvey;
     [SerializeField] PauseManager pauseManager;
+    [SerializeField] bool showSurveyAfterCompletion;
 
     static int attemptCount = 0;
 
@@ -72,6 +73,18 @@ public class LevelManager : MonoBehaviour
     }
 
     public void OnComplete()
+    {
+        if (showSurveyAfterCompletion)
+        {
+            moodSurvey.Show(callback: Complete);
+        }
+        else
+        {
+            Complete();
+        }
+    }
+
+    void Complete()
     {
         pauseManager.Pause();
         attemptCount = 0;
