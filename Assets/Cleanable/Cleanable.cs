@@ -31,6 +31,8 @@ public class Cleanable : MonoBehaviour
         var textureDescriptor = new RenderTextureDescriptor(textureWidth, textureHeight, RenderTextureFormat.R8);
         sourceTexture = RenderTexture.GetTemporary(textureDescriptor);
         targetTexture = RenderTexture.GetTemporary(textureDescriptor);
+        Graphics.Blit(Texture2D.blackTexture, sourceTexture);
+        Graphics.Blit(Texture2D.blackTexture, targetTexture);
         blitMaterial = new Material(Shader.Find("CleanableBlit"));
         blitMaterial.SetFloat("_Precision", cleaningPrecision);
         meshRenderer.material.SetTexture("_Render_Texture", targetTexture);

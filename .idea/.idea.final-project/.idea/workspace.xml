@@ -5,76 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Lighting Settings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Lighting Settings.lighting" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting).unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting).unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-0_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-0_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-0_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-0_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-0_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-0_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-0_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-0_comp_shadowmask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-0_comp_shadowmask.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-0_comp_shadowmask.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-10_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-10_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-10_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-10_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-10_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-10_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-10_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-10_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-10_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-10_comp_shadowmask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-10_comp_shadowmask.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-10_comp_shadowmask.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-1_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-1_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-1_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-1_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-1_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-1_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-1_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-1_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-1_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-1_comp_shadowmask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-1_comp_shadowmask.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-1_comp_shadowmask.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-2_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-2_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-2_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-2_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-2_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-2_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-2_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-2_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-2_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-2_comp_shadowmask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-2_comp_shadowmask.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-2_comp_shadowmask.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-3_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-3_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-3_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-3_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-3_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-3_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-3_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-3_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-3_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-3_comp_shadowmask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-3_comp_shadowmask.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-3_comp_shadowmask.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-4_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-4_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-4_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-4_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-4_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-4_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-4_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-4_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-4_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-4_comp_shadowmask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-4_comp_shadowmask.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-4_comp_shadowmask.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-5_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-5_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-5_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-5_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-5_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-5_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-5_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-5_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-5_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-5_comp_shadowmask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-5_comp_shadowmask.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-5_comp_shadowmask.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-6_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-6_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-6_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-6_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-6_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-6_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-6_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-6_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-6_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-6_comp_shadowmask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-6_comp_shadowmask.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-6_comp_shadowmask.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-7_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-7_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-7_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-7_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-7_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-7_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-7_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-7_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-7_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-7_comp_shadowmask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-7_comp_shadowmask.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-7_comp_shadowmask.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-8_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-8_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-8_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-8_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-8_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-8_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-8_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-8_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-8_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-8_comp_shadowmask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-8_comp_shadowmask.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-8_comp_shadowmask.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-9_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-9_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-9_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-9_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-9_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-9_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-9_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-9_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-9_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-9_comp_shadowmask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-9_comp_shadowmask.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting)/Lightmap-9_comp_shadowmask.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cleanable/Cleanable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cleanable/Cleanable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room/CabinetModified.blend.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/CabinetModified.blend.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,7 +227,8 @@
     <MESSAGE value="stats manager" />
     <MESSAGE value="fixed falling outside of the map" />
     <MESSAGE value="fixed survey not showing" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed survey not showing" />
+    <MESSAGE value="recalculated the lightmap" />
+    <option name="LAST_COMMIT_MESSAGE" value="recalculated the lightmap" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
