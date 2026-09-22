@@ -80,8 +80,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   voxelTime: 10
-  baseColor: {r: 0.8, g: 0.6509804, b: 0.77254903, a: 1}
-  destroyedColor: {r: 0.5, g: 0.32999998, b: 0.46868423, a: 1}
+  baseColor: {r: 0.90588236, g: 0.49098822, b: 0.7093536, a: 1}
+  destroyedColor: {r: 0.47599998, g: 0.23056246, b: 0.41649994, a: 1}
 --- !u!114 &2390738793628485069
 MonoBehaviour:
   m_ObjectHideFlags: 0

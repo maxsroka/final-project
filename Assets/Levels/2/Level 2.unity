@@ -501,7 +501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cleanable
   textureWidth: 1024
   textureHeight: 1024
-  cleanThreshold: 0.28
+  cleanThreshold: 0.31
   cleaningPrecision: 0.0052
   drawDebugTexture: 0
 --- !u!64 &1006248456
@@ -593,6 +593,10 @@ PrefabInstance:
     - target: {fileID: 6662100171165833948, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082911030124741646, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
+      propertyPath: voxelTime
+      value: 17.5
       objectReference: {fileID: 0}
     - target: {fileID: 8082911030124741646, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
       propertyPath: levelManager

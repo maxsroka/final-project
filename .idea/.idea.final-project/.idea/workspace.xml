@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cleanable/Cleanable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cleanable/Cleanable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/CabinetModified.blend.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/CabinetModified.blend.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +84,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Desktop/FP_Test_build\final-project.exe" />
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/fp_screenshot_build\final-project.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Max\Desktop\FP_Test_build" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -203,7 +201,6 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="added gravity" />
     <MESSAGE value="added a simple soap model" />
     <MESSAGE value="added a physics material" />
     <MESSAGE value="added some objects to the lvl 0" />
@@ -228,7 +225,8 @@
     <MESSAGE value="fixed falling outside of the map" />
     <MESSAGE value="fixed survey not showing" />
     <MESSAGE value="recalculated the lightmap" />
-    <option name="LAST_COMMIT_MESSAGE" value="recalculated the lightmap" />
+    <MESSAGE value="fixed a player reset issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed a player reset issue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
