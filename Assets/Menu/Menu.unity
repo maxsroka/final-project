@@ -302,8 +302,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -60}
-  m_SizeDelta: {x: -120, y: 218.5147}
+  m_AnchoredPosition: {x: 0, y: -50}
+  m_SizeDelta: {x: -100, y: 218.5147}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &244396631
 MonoBehaviour:
@@ -325,19 +325,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Welcome! This game is part of my computer science final project titled
-    "The development of an engaging 3D physics-based game and an investigation of
-    its short-term effects on players'' moods".
-
-
-    The game will sporadically
+  m_text: "Welcome! This game is part of my computer science final project titled
+    \"The development of an engaging 3D physics-based game and an investigation of
+    its short-term effects on players' moods\".\n\nIn the game, you control <color=#eb34c9>a
+    bar of soap</color> that has to clean dirty objects in the kitchen. Be quick,
+    the soap <color=#f04f26>melts as you move</color>!\n\nThe game will sporadically
     ask you to select your mood on a scale. The collected data will be presented
-    in my report on the project.
-
-
-    After you''ve finished playing, please fill
-    out the online survey. Some data is collected automatically and can be copied
-    by pressing "COPY SURVEY DATA" at the bottom of this menu.'
+    in my report on the project. \n\nAfter you've finished playing, please fill out
+    the online survey. Some data is collected automatically and can be copied by
+    pressing \"COPY SURVEY DATA\" at the bottom of this menu."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a1cc95174d57424b86f11e9b5a921ea, type: 2}
   m_sharedMaterial: {fileID: 1924240336800062120, guid: 3a1cc95174d57424b86f11e9b5a921ea, type: 2}
@@ -364,8 +360,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 13
+  m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

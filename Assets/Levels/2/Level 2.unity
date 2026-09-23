@@ -501,7 +501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cleanable
   textureWidth: 1024
   textureHeight: 1024
-  cleanThreshold: 0.31
+  cleanThreshold: 0.3068693
   cleaningPrecision: 0.0052
   drawDebugTexture: 0
 --- !u!64 &1006248456
