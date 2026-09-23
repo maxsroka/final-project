@@ -370,6 +370,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8082911030124741646, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
+      propertyPath: voxelTime
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082911030124741646, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
       propertyPath: levelManager
       value: 
       objectReference: {fileID: 2136183058}

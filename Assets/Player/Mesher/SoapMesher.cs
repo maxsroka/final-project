@@ -19,6 +19,7 @@ public class SoapMesher : MonoBehaviour
     [SerializeField] float voxelTime;
     [SerializeField] Color baseColor;
     [SerializeField] Color destroyedColor;
+    [SerializeField] ParticleSystem particleSystem;
 
     NativeList<float3> vertices;
     NativeList<int> indices;
@@ -26,6 +27,7 @@ public class SoapMesher : MonoBehaviour
 
     VoxelArray voxels;
     float3 meshOffset;
+    float burnMultiplier = 1f;
 
     public const float VOXEL_SCALE = 0.2f;
 
@@ -43,7 +45,18 @@ public class SoapMesher : MonoBehaviour
     {
         return transform.TransformPoint(VoxelToLocalPosition(voxelPosition));
     }
-    
+
+    public void SetBurnMultiplier(float multiplier)
+    {
+        burnMultiplier = multiplier;
+    }
+
+    void Update()
+    {
+        var emission = particleSystem.emission;
+        emission.enabled = burnMultiplier > 1f;
+    }
+
     void FixedUpdate()
     {
         bool anyVoxelsRemoved = false;
@@ -67,7 +80,7 @@ public class SoapMesher : MonoBehaviour
                     }
                     else
                     {
-                        voxel.time -= Time.deltaTime;
+                        voxel.time -= Time.deltaTime * burnMultiplier;
                         voxels[x, y, z] = voxel;
                     }
                 }

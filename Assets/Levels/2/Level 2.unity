@@ -596,7 +596,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8082911030124741646, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
       propertyPath: voxelTime
-      value: 17.5
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 8082911030124741646, guid: 92a2a853fd7752a4393545aaa7f65c82, type: 3}
       propertyPath: levelManager
