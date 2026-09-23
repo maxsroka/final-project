@@ -328,11 +328,11 @@ PrefabInstance:
       objectReference: {fileID: 1202030071}
     - target: {fileID: 5679861415898134916, guid: 82c736c13777d724dae4a35b1b273e81, type: 3}
       propertyPath: nextLevelName
-      value: Menu
+      value: Level 3
       objectReference: {fileID: 0}
     - target: {fileID: 5679861415898134916, guid: 82c736c13777d724dae4a35b1b273e81, type: 3}
       propertyPath: showSurveyAfterCompletion
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5679861415898134916, guid: 82c736c13777d724dae4a35b1b273e81, type: 3}
       propertyPath: <LevelName>k__BackingField
