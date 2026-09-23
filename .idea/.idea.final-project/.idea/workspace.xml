@@ -6,19 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/1/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/1/Level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/2/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/2/Level 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/2/WaterHazard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/2/WaterHazard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/3/Burner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/3/Burner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/3/Burner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/3/Burner.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/3/Level 3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/3/Level 3.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Manager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Levels/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/LevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Menu/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Menu/MenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu/MenuManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mood Survey/Mood Survey.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mood Survey/Mood Survey.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mood Survey/MoodSurvey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mood Survey/MoodSurvey.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,7 +253,6 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="unity upgrade and a new scene" />
     <MESSAGE value="playtest preparation" />
     <MESSAGE value="improved the plate model" />
     <MESSAGE value="fixed more issues with cleaning" />
@@ -289,7 +277,8 @@
     <MESSAGE value="fixed climbing walls in some places" />
     <MESSAGE value="fixed lvl 2 colliders" />
     <MESSAGE value="updated the menu a little" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated the menu a little" />
+    <MESSAGE value="audio changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="audio changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

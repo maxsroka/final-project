@@ -24,6 +24,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] bool showSurveyAfterCompletion;
     [SerializeField] AudioSource cleanSource;
     [SerializeField] AudioSource clickSource;
+    [SerializeField] AudioSource winSource;
 
     static int attemptCount = 0;
     int previousCleanLevelSum = 0;
@@ -112,6 +113,7 @@ public class LevelManager : MonoBehaviour
 
     void Complete()
     {
+        winSource.Play();
         pauseManager.Pause();
         attemptCount = 0;
         Status = LevelStatus.Completed;
