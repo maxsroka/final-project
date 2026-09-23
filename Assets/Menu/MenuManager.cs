@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+    [SerializeField] AudioSource clickSource;
+    
     void Start()
     {
         SceneManager.LoadScene("Room/Room (Baked Lighting)", LoadSceneMode.Additive);
@@ -14,18 +16,16 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("Level 1");
     }
 
-    public void OnChooseLevel()
-    {
-        
-    }
-
     public void OnQuit()
     {
+        clickSource.Play();
         Application.Quit();
     }
 
     public void OnCopySurveyData()
     {
+        clickSource.Play();
+        
         var moodString = PlayerPrefs.GetString("mood_string", "");
 
         var avgFrameRate = Mathf.RoundToInt(PlayerPrefs.GetFloat("frame_rate_avg"));

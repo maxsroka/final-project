@@ -10,12 +10,14 @@ public class Burner : MonoBehaviour
     bool isBurning;
     bool isPlayerInTrigger;
     Material material;
+    AudioSource audioSource;
     
     void Awake()
     {
         fireHazard = GetComponentInParent<FireHazard>();
         meshRenderer = GetComponentInParent<MeshRenderer>();
         particleSystem = GetComponentInChildren<ParticleSystem>();
+        audioSource = GetComponentInChildren<AudioSource>();
         material = new Material(Shader.Find("Universal Render Pipeline/Lit"));
         meshRenderer.materials = new[] { meshRenderer.sharedMaterial, material };
     }
@@ -30,12 +32,14 @@ public class Burner : MonoBehaviour
     {
         isBurning = true;
         material.color = fireHazard.BurnerActiveColor;
+        audioSource.Play();   
     }
 
     public void DisableBurn()
     {
         isBurning = false;
         material.color = fireHazard.BurnerInactiveColor;
+        audioSource.Stop();
         
         if (isPlayerInTrigger)
         {

@@ -163,6 +163,14 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -15.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6621136021535071433, guid: ff2394e8b075c0049a2b02fbc51ae002, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 6621136021535071433, guid: ff2394e8b075c0049a2b02fbc51ae002, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.38
+      objectReference: {fileID: 0}
     - target: {fileID: 8388115467771321033, guid: ff2394e8b075c0049a2b02fbc51ae002, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -518,7 +526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb7d2cedb103e7a49b64ac370e23876c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireHazard
-  <BurnMultiplier>k__BackingField: 50
+  <BurnMultiplier>k__BackingField: 75
   <BurnerInactiveColor>k__BackingField: {r: 0.11372549, g: 0.18039216, b: 0.31764707, a: 1}
   <BurnerActiveColor>k__BackingField: {r: 1, g: 0.73514545, b: 0.14117646, a: 1}
   burners:
@@ -1712,6 +1720,14 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 14.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6621136021535071433, guid: ff2394e8b075c0049a2b02fbc51ae002, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6621136021535071433, guid: ff2394e8b075c0049a2b02fbc51ae002, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.28
+      objectReference: {fileID: 0}
     - target: {fileID: 8388115467771321033, guid: ff2394e8b075c0049a2b02fbc51ae002, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1850,6 +1866,14 @@ PrefabInstance:
     - target: {fileID: 5850338334965591573, guid: ff2394e8b075c0049a2b02fbc51ae002, type: 3}
       propertyPath: m_Center.z
       value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6621136021535071433, guid: ff2394e8b075c0049a2b02fbc51ae002, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 6621136021535071433, guid: ff2394e8b075c0049a2b02fbc51ae002, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.44
       objectReference: {fileID: 0}
     - target: {fileID: 8388115467771321033, guid: ff2394e8b075c0049a2b02fbc51ae002, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2225,6 +2249,14 @@ PrefabInstance:
     - target: {fileID: 5850338334965591573, guid: ff2394e8b075c0049a2b02fbc51ae002, type: 3}
       propertyPath: m_Radius
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6621136021535071433, guid: ff2394e8b075c0049a2b02fbc51ae002, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 6621136021535071433, guid: ff2394e8b075c0049a2b02fbc51ae002, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.04
       objectReference: {fileID: 0}
     - target: {fileID: 8388115467771321033, guid: ff2394e8b075c0049a2b02fbc51ae002, type: 3}
       propertyPath: m_LocalPosition.x

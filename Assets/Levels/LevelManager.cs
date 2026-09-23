@@ -4,6 +4,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class LevelManager : MonoBehaviour
 {
@@ -21,8 +22,12 @@ public class LevelManager : MonoBehaviour
     [SerializeField] MoodSurvey moodSurvey;
     [SerializeField] PauseManager pauseManager;
     [SerializeField] bool showSurveyAfterCompletion;
+    [SerializeField] AudioSource cleanSource;
+    [SerializeField] AudioSource clickSource;
 
     static int attemptCount = 0;
+    int previousCleanLevelSum = 0;
+    float cleanSfxPitch = 1f;
 
     void Awake()
     {
@@ -55,6 +60,27 @@ public class LevelManager : MonoBehaviour
         if (Cleanables.All(c => c.IsClean))
         {
             StartCoroutine(OnCompleteDelayed());
+        }
+        
+        TryPlayAudio();
+    }
+
+    void TryPlayAudio()
+    {
+        var cleanablesSum = Mathf.RoundToInt(Cleanables.Sum(c => c.CleanLevel) * 100f);
+        if (cleanablesSum > previousCleanLevelSum)
+        {
+            if (!cleanSource.isPlaying)
+            {
+                previousCleanLevelSum = cleanablesSum;
+                cleanSource.pitch = cleanSfxPitch;
+                cleanSource.Play();
+                cleanSfxPitch += 0.05f;
+                if (cleanSfxPitch > 1.3f)
+                {
+                    cleanSfxPitch = 1f;
+                }
+            }
         }
     }
 
@@ -106,11 +132,13 @@ public class LevelManager : MonoBehaviour
 
     public void OnProceed()
     {
+        clickSource.Play();
         SceneManager.LoadScene(Status == LevelStatus.Completed ? nextLevelName : SceneManager.GetActiveScene().name);
     }
 
     public void OnGoBack()
     {
+        clickSource.Play();
         SceneManager.LoadScene("Menu");
     }
 
