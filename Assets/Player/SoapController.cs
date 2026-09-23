@@ -74,6 +74,8 @@ public class SoapController : MonoBehaviour
 
     void OnCollisionStay(Collision other)
     {
+        if (other.collider.CompareTag("Ignore Ground Check")) return;
+        
         isGrounded = true;
     }
 

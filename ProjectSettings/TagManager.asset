@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Cleanable
+  - Ignore Ground Check
   layers:
   - Default
   - TransparentFX

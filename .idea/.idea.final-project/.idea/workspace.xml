@@ -4,7 +4,11 @@
     <option name="flavorId" value="CMakePlainProjectFlavor" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="" />
+    <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Player/SoapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/SoapController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting).unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/Room (Baked Lighting).unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -248,7 +252,6 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="not sure" />
     <MESSAGE value="upload last playtest files" />
     <MESSAGE value="simplifed the flipping code and adjusted the parameters based on feedback" />
     <MESSAGE value="added input prompts" />
@@ -273,7 +276,8 @@
     <MESSAGE value="upload" />
     <MESSAGE value="better visuals" />
     <MESSAGE value="small normal map fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="small normal map fix" />
+    <MESSAGE value="fixed some minor issues with the sink model and menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed some minor issues with the sink model and menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

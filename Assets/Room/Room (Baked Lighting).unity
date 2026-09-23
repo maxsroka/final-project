@@ -644,6 +644,22 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 6006143915910037280, guid: b346b0fca1efa774daf1ace7544f1a2f, type: 3}
+    - target: {fileID: 4021109060784459366, guid: 0892cdf1f087479489c4fba7f9732cde, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1428692
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021109060784459366, guid: 0892cdf1f087479489c4fba7f9732cde, type: 3}
+      propertyPath: m_Size.y
+      value: 1.826791
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021109060784459366, guid: 0892cdf1f087479489c4fba7f9732cde, type: 3}
+      propertyPath: m_Center.x
+      value: 0.02130396
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021109060784459366, guid: 0892cdf1f087479489c4fba7f9732cde, type: 3}
+      propertyPath: m_Center.z
+      value: 0.00000034332274
+      objectReference: {fileID: 0}
     - target: {fileID: 6521791789397540354, guid: 0892cdf1f087479489c4fba7f9732cde, type: 3}
       propertyPath: m_Size.y
       value: 0.11396358
@@ -768,7 +784,7 @@ GameObject:
   - component: {fileID: 1316561371}
   m_Layer: 0
   m_Name: Wall Collider
-  m_TagString: Untagged
+  m_TagString: Ignore Ground Check
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
