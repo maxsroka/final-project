@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Manager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Camera/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Camera/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/SoapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/SoapController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room/FreeStoveModified.blend.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/FreeStoveModified.blend.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +91,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Desktop/fp_screenshot_build\final-project.exe" />
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/fp_playtest_build_6\final-project.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Max\Desktop\FP_Test_build" />
       <option name="PASS_PARENT_ENVS" value="1" />

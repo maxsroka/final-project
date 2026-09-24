@@ -23,4 +23,12 @@ public class CameraController : MonoBehaviour
         transform.rotation = Quaternion.Euler(rotation);
         transform.position = player.position;
     }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = new Color(1.0f, 0f, 0f, 0.1f);
+        Gizmos.DrawSphere(transform.position, Vector3.Distance(transform.position, transform.GetChild(0).position));
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, Vector3.Distance(transform.position, transform.GetChild(0).position));
+    }
 }

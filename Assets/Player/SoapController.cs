@@ -57,10 +57,11 @@ public class SoapController : MonoBehaviour
 
     void Flip()
     {
-        var forward = camera.forward;
-        forward.y = 0;
-        var rotationDirection = Quaternion.AngleAxis(90f, Vector3.up) * forward.normalized;
+        var right = camera.right;
+        right.y = 0; // ignore player looking down
+        var rotationDirection = right.normalized;
         rigidbody.AddTorque(rotationDirection * flipAngularForce, ForceMode.VelocityChange);
+        
         rigidbody.AddForce(Vector3.up * flipLinearForce, ForceMode.VelocityChange);
     }
 
