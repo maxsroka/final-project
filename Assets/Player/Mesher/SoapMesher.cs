@@ -146,11 +146,9 @@ public class SoapMesher : MonoBehaviour
         
         var mesh = new Mesh();
         mesh.SetVertices(vertices.AsArray());
-        // mesh.indexFormat = IndexFormat.UInt32
         mesh.SetIndices(indices.AsArray(), MeshTopology.Triangles, 0);
         mesh.SetColors(colors.AsArray());
         mesh.RecalculateNormals();
-        // mesh.Optimize();
         
         meshFilter.mesh = mesh;
 

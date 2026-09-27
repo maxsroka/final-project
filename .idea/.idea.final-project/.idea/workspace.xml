@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/shelf/not_sure.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/shelf/not_sure.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Mesher/SoapMesher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Mesher/SoapMesher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/SoapCleaner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/SoapCleaner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +93,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Desktop/fp_playtest_build_6\final-project.exe" />
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/fp_final_release_1\final-project.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Max\Desktop\FP_Test_build" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -254,7 +256,6 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fixed more issues with cleaning" />
     <MESSAGE value="reorganized files + ui work" />
     <MESSAGE value="level end ui" />
     <MESSAGE value="level visuals improvements" />
@@ -279,7 +280,8 @@
     <MESSAGE value="audio changes" />
     <MESSAGE value="minor fixes" />
     <MESSAGE value="test2" />
-    <option name="LAST_COMMIT_MESSAGE" value="test2" />
+    <MESSAGE value="moved some files to make the project cleaner" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved some files to make the project cleaner" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
