@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecc8cffd-c16f-4e6b-a22c-37be552a02a5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Camera/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Camera/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/SoapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/SoapController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room/FreeStoveModified.blend.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room/FreeStoveModified.blend.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/shelf/not_sure.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.final-project/.idea/shelf/not_sure.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +42,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f4daee0a7aa74c1da85f9f62f53ff1ecb2e00/54/f430622a/int3x2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f4daee0a7aa74c1da85f9f62f53ff1ecb2e00/85/9f604a97/float3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Cleanable/Cleanable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Levels/1/Level 1.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Levels/2/Level 2.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Levels/3/Burner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Levels/3/FireHazard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Levels/3/Level 3.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Levels/Level Manager.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Levels/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Levels/PauseManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -57,6 +56,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Player/SoapCleaner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/SoapController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/SoapInteractor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Room/FreeStoveModified.blend.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Room/SceneObjectDisabler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/BuildGUID.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/GameTimer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -254,8 +254,6 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="playtest preparation" />
-    <MESSAGE value="improved the plate model" />
     <MESSAGE value="fixed more issues with cleaning" />
     <MESSAGE value="reorganized files + ui work" />
     <MESSAGE value="level end ui" />
@@ -279,7 +277,9 @@
     <MESSAGE value="fixed lvl 2 colliders" />
     <MESSAGE value="updated the menu a little" />
     <MESSAGE value="audio changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="audio changes" />
+    <MESSAGE value="minor fixes" />
+    <MESSAGE value="test2" />
+    <option name="LAST_COMMIT_MESSAGE" value="test2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
